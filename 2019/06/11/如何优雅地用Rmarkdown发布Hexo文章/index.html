@@ -9,17 +9,17 @@
   
   
   
-  <meta name="description" content="Markdown是一个基于Web的文本到HTML的转换工具，可以通过简单、以读写的文本格式生成结构化的HTML文档。为什么选择Rstudio作为markdown的编辑环境？答案参考知乎《RStudio的markdown功能怎么用起来，和其他markdown软件的异同？》https://www.zhihu.com/question/35803490  准备工作：install.packages(c(">
+  <meta name="description" content="一、MarkdownMarkdown是一个基于Web的文本到HTML的转换工具，可以通过简单、以读写的文本格式生成结构化的HTML文档。   二、为什么选择Rstudio作为markdown的编辑环境？答案参考知乎《RStudio的markdown功能怎么用起来，和其他markdown软件的异同？》https://www.zhihu.com/question/35803490  三、准备工作ins">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何优雅地用Rmarkdown发布Hexo文章？">
 <meta property="og:url" content="http://yoursite.com/2019/06/11/如何优雅地用Rmarkdown发布Hexo文章/index.html">
 <meta property="og:site_name" content="Gengxing JIN">
-<meta property="og:description" content="Markdown是一个基于Web的文本到HTML的转换工具，可以通过简单、以读写的文本格式生成结构化的HTML文档。为什么选择Rstudio作为markdown的编辑环境？答案参考知乎《RStudio的markdown功能怎么用起来，和其他markdown软件的异同？》https://www.zhihu.com/question/35803490  准备工作：install.packages(c(">
+<meta property="og:description" content="一、MarkdownMarkdown是一个基于Web的文本到HTML的转换工具，可以通过简单、以读写的文本格式生成结构化的HTML文档。   二、为什么选择Rstudio作为markdown的编辑环境？答案参考知乎《RStudio的markdown功能怎么用起来，和其他markdown软件的异同？》https://www.zhihu.com/question/35803490  三、准备工作ins">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-11T09:31:44.066Z">
+<meta property="og:updated_time" content="2019-06-11T11:59:40.277Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何优雅地用Rmarkdown发布Hexo文章？">
-<meta name="twitter:description" content="Markdown是一个基于Web的文本到HTML的转换工具，可以通过简单、以读写的文本格式生成结构化的HTML文档。为什么选择Rstudio作为markdown的编辑环境？答案参考知乎《RStudio的markdown功能怎么用起来，和其他markdown软件的异同？》https://www.zhihu.com/question/35803490  准备工作：install.packages(c(">
+<meta name="twitter:description" content="一、MarkdownMarkdown是一个基于Web的文本到HTML的转换工具，可以通过简单、以读写的文本格式生成结构化的HTML文档。   二、为什么选择Rstudio作为markdown的编辑环境？答案参考知乎《RStudio的markdown功能怎么用起来，和其他markdown软件的异同？》https://www.zhihu.com/question/35803490  三、准备工作ins">
   
     <link rel="alternate" href="/atom.xml" title="Gengxing JIN" type="application/atom+xml">
   
@@ -135,9 +135,10 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Markdown是一个基于Web的文本到HTML的转换工具，可以通过简单、以读写的文本格式生成结构化的HTML文档。<br>为什么选择Rstudio作为markdown的编辑环境？<br>答案参考知乎《RStudio的markdown功能怎么用起来，和其他markdown软件的异同？》<br><a href="https://www.zhihu.com/question/35803490" target="_blank" rel="noopener">https://www.zhihu.com/question/35803490</a> </p>
-<p>准备工作：<br>install.packages(c(‘ggplot2’, ‘knitr’, ‘foreign’, ‘rmarkdown’, ‘stargazer’,”htmltools”,”caTools”,”bitops” ))</p>
-<p>1.打开Rstudio → Tools → Global Options<br>2.点击sweave，在Weave Rnw files using选择knitr; Typeset Latex into PDF using 选择XeLaTex.<br>3.File → New file → R Markdown.<br>4.输入Title和Author，选择Html，然后OK.<br>5.接下来就可以在新窗口中优雅地写文章啦.<br>6.文章写好后，在Knit中选择不同的文件类型进行预览，并保存在桌面.<br>7.将生成.Rmd文件复制到你的hexo文件夹中source下的_posts 中.<br>8.执行hexo命令:hexo g(用于生成静态文件);hexos(用于启动服务器，进行本地预览)；完成后打开浏览器输入localhost:4000查看本地发布效果；hexo deploy(发布文章到github.io).<br>9.大功告成！</p>
+        <p>一、Markdown<br>Markdown是一个基于Web的文本到HTML的转换工具，可以通过简单、以读写的文本格式生成结构化的HTML文档。  </p>
+<p>二、为什么选择Rstudio作为markdown的编辑环境？<br>答案参考知乎《RStudio的markdown功能怎么用起来，和其他markdown软件的异同？》<br><a href="https://www.zhihu.com/question/35803490" target="_blank" rel="noopener">https://www.zhihu.com/question/35803490</a> </p>
+<p>三、准备工作<br>install.packages(c(‘ggplot2’, ‘knitr’, ‘foreign’, ‘rmarkdown’, ‘stargazer’,”htmltools”,”caTools”,”bitops” ))</p>
+<p>四、工作流程<br>1.打开Rstudio → Tools → Global Options<br>2.点击sweave，在Weave Rnw files using选择knitr; Typeset Latex into PDF using 选择XeLaTex.<br>3.File → New file → R Markdown.<br>4.输入Title和Author，选择Html，然后OK.<br>5.接下来就可以在新窗口中优雅地写文章啦.<br>6.文章写好后，在Knit中选择不同的文件类型进行预览，并保存在桌面.<br>7.将生成.md文件复制到你的本地hexo文件夹目录source下的_posts 中.<br>8.执行hexo命令:hexo g(用于生成静态文件);hexo s(用于启动服务器，进行本地预览)；完成后打开浏览器输入localhost:4000查看本地发布效果；hexo deploy(发布文章到github.io查看远程效果，需要输入github账号密码).<br>9.大功告成！</p>
 
       
     </div>
